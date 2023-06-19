@@ -65,9 +65,14 @@
     <link href="css/main.min.css" rel="stylesheet" media="all" />
 
     <!-- chatbot -->
-    <link rel="stylesheet" href="css/chat.css">
+     <!-- chatbot -->
+    <!-- <link rel="stylesheet" href="css/chat.css">
     <link rel="stylesheet" href="css/home.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+    <!-- whatsapp link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/whatsapp.css">
+
 
     <!-- below link added for smooth scrolling effect-->
     <link
@@ -89,61 +94,8 @@
 
   <body class="animsition js-preloader" style="overflow: hidden;">
      <!-- CHAT BAR BLOCK -->
-     <div class="chat-bar-collapsible">
-      <button id="chat-button" type="button" class="collapsible">
-        <i id="chat-icon" class="fa fa-fw fa-comments-o"></i>
-      </button>
-
-      <div class="content">
-        <div class="full-chat-block">
-          <!-- Message Container -->
-          <div class="outer-container">
-            <div class="chat-container">
-              <!-- Messages -->
-              <div id="chatbox">
-                <h5 id="chat-timestamp"></h5>
-                <p id="botStarterMessage" class="botText">
-                  <span>Loading...</span>
-                </p>
-              </div>
-
-              <!-- User input box -->
-              <div class="chat-bar-input-block">
-                <div id="userInput">
-                  <input
-                    id="textInput"
-                    class="input-box"
-                    type="text"
-                    name="msg"
-                    placeholder="Tap 'Enter' to send a message"
-                  />
-                  <p></p>
-                </div>
-
-                <div class="chat-bar-icons">
-                  <i
-                    id="chat-icon"
-                    style="color: crimson"
-                    class="fa fa-fw fa-heart"
-                    onclick="heartButton()"
-                  ></i>
-                  <i
-                    id="chat-icon"
-                    style="color: #333"
-                    class="fa fa-fw fa-send"
-                    onclick="sendButton()"
-                  ></i>
-                </div>
-              </div>
-
-              <div id="chat-bar-bottom">
-                <p></p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
+     <a href="https:/wa.me/918104837395"  target="_blank" 
+     class="whatsapp_float"><i class="fa-brands fa-whatsapp whatsapp-icon"></i></a>  
     <main id="main">
       <header id="header">
         <div class="header header-2 header-page-pilling d-none d-lg-block">
@@ -222,11 +174,14 @@
                     data-target="#sub4"
                     aria-expanded="true"
                     aria-controls="sub4"
-                    >Blog</a
+                    >Awards</a
                   >
                 </li>
                 <li class="menu-item">
                   <a href="contact.html">Contact</a>
+                </li>
+                <li class="menu-item">
+                  <a href="contact.html">Enquiry</a>
                 </li>
                 <li class="menu-item">
                   <a href="signinup.html">Sign In</a>
@@ -332,10 +287,13 @@
                 </li>
 
                 <li class="menu-item">
-                  <a href="blog-detail-img.html">Blog</a>
+                  <a href="blog-detail-img.html">Awards</a>
                 </li>
                 <li class="menu-item">
                   <a href="contact.html">Contact</a>
+                </li>
+                <li class="menu-item">
+                  <a href="contact.html">Enquiry</a>
                 </li>
                 <li class="menu-item">
                   <a href="signinup.html">Sign In</a>
@@ -430,7 +388,7 @@
                     src="images/Terrace_1 (1).jpg"
                     alt="Master Slider 01"
                   />
-                  <h4
+                  <h4 style=" font-weight: bold;"
                     class="tp-caption tp-resizeme rev-text-1"
                     data-frames='[{"delay":400,"speed":1200,"frame":"0","from":"y:[-100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;","mask":"x:0px;y:0px;s:inherit;e:inherit;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":800,"frame":"999","to":"auto:auto;","ease":"Power3.easeInOut"}]'
                     data-x="['left']"
@@ -444,8 +402,9 @@
                     data-whitespace="[nowrap, nowrap, nowrap, nowrap, nowrap]"
                     data-color="#fff"
                     data-fontweight="400"
-                    data-fontsize="[11, 11, 14, 16, 16]"
+                    data-fontsize="[18, 18, 16, 18, 18]"
                     data-textalign="[left, left, left, center, center]"
+                    
                   >
                     we are Furnish ME Architects.
                   </h4>
@@ -618,7 +577,7 @@
                   <article class="media media-service-1">
                     <figure class="media__img">
                       <div class="media__img-inner">
-                        <img src="images/service-03.jpg" alt="planning" />
+                        <img src="images/service-03.jpg" alt="Projects" />
                       </div>
                       <img
                         class="img-rotate-2 img-line"
@@ -628,7 +587,7 @@
                     </figure>
                     <div class="media__title title-number">
                       <h3 class="title title--sm">
-                        <a href="#">planning</a>
+                        <a href="#">Projects</a>
                       </h3>
                       <span class="number">03</span>
                     </div>
@@ -805,8 +764,8 @@
                         data-y="['bottom']"
                         data-hoffset="[-8, 120, 120, 0, 0]"
                         data-voffset="[-40, 40, 40, 30, 30]"
-                        data-paddingleft="[0, 0, 0, 0, 15]"
-                        data-paddingright="[0, 0, 0, 0, 15]"
+                        data-paddingleft="[0, 0, 0, 0, 25]"
+                        data-paddingright="[0, 0, 0, 0, 25]"
                         data-width="['auto']"
                         data-height='["auto"]'
                         data-whitespace="[nowrap, nowrap, nowrap, nowrap, nowrap]"
@@ -939,10 +898,10 @@
                       <img src="images/Awards/40 Under  40  Best Architects .jpg" alt="About" />
                       <span class="line"></span>
                       <span class="line line-bottom"></span>
-                      <div class="media__img-inner">
+                      <!-- <div class="media__img-inner">
                         <span class="number">08</span>
                         <span class="desc">years of experience</span>
-                      </div>
+                      </div> -->
                     </div>
                   </div>
                 </div>
