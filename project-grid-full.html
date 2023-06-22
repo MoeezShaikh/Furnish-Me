@@ -16,11 +16,14 @@
     <link href="vendor/themify-font/themify-icons.css" rel="stylesheet" media="all">
 
     <link href="css/poppins-font.min.css" rel="stylesheet" media="all">
-
-    <link rel="stylesheet" href="css/chat.css">
+    <!-- chatbot -->
+    <!-- <link rel="stylesheet" href="css/chat.css">
     <link rel="stylesheet" href="css/home.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+    <!-- whatsapp link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/whatsapp.css">
+ 
 
     <link href="vendor/bootstrap-4.1/bootstrap.min.css" rel="stylesheet" media="all">
 
@@ -45,61 +48,10 @@
 
 <body class="animsition js-preloader">
     <!-- CHAT BAR BLOCK -->
-    <div class="chat-bar-collapsible">
-        <button id="chat-button" type="button" class="collapsible">
-          <i id="chat-icon" class="fa fa-fw fa-comments-o"></i>
-        </button>
-  
-        <div class="content">
-          <div class="full-chat-block">
-            <!-- Message Container -->
-            <div class="outer-container">
-              <div class="chat-container">
-                <!-- Messages -->
-                <div id="chatbox">
-                  <h5 id="chat-timestamp"></h5>
-                  <p id="botStarterMessage" class="botText">
-                    <span>Loading...</span>
-                  </p>
-                </div>
-  
-                <!-- User input box -->
-                <div class="chat-bar-input-block">
-                  <div id="userInput">
-                    <input
-                      id="textInput"
-                      class="input-box"
-                      type="text"
-                      name="msg"
-                      placeholder="Tap 'Enter' to send a message"
-                    />
-                    <p></p>
-                  </div>
-  
-                  <div class="chat-bar-icons">
-                    <i
-                      id="chat-icon"
-                      style="color: crimson"
-                      class="fa fa-fw fa-heart"
-                      onclick="heartButton()"
-                    ></i>
-                    <i
-                      id="chat-icon"
-                      style="color: #333"
-                      class="fa fa-fw fa-send"
-                      onclick="sendButton()"
-                    ></i>
-                  </div>
-                </div>
-  
-                <div id="chat-bar-bottom">
-                  <p></p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+    
+    <a href="https:/wa.me/917220000880"  target="_blank" 
+    class="whatsapp_float"><i class="fa-brands fa-whatsapp whatsapp-icon"></i></a>  
+    
     <div class="page-wrapper">
 
         <header id="header">
@@ -160,11 +112,14 @@
                                             </li>
 
                                             <li class="menu-item menu-item-has-children">
-                                                <a href="blog-detail-img.html">blog</a>
+                                                <a href="blog-detail-img.html">Awards</a>
 
                                             </li>
                                             <li class="menu-item">
                                                 <a href="contact.html">contact</a>
+                                            </li>
+                                            <li class="menu-item">
+                                                <a href="contact.html">Enquiry</a>
                                             </li>
                                             <li class="menu-item">
                                                 <a href="signinup.html">Sign In</a>
@@ -224,12 +179,12 @@
                 <nav class="header-nav-menu-mobile">
                     <div class="container-fluid">
                         <ul class="menu nav-menu menu-mobile">
-                            <li class="menu-item menu-item-has-children">
+                            <li class="menu-item">
                                 <a href="index.html">Home</a>
                                 
                             </li>
                             <li class="menu-item">
-                                <a href="about-us.html">about</a>
+                                <a href="about-us.html">About</a>
                             </li>
                             <li class="menu-item menu-item-has-children">
                                 <a href="project-grid-full.html">Project</a>
@@ -268,12 +223,15 @@
                                 </ul>
                             </li>
                             
-                            <li class="menu-item menu-item-has-children">
-                                <a href="blog-detail-img.html">blog</a>
+                            <li class="menu-item">
+                                <a href="blog-detail-img.html">Awards</a>
                                 
                             </li>
                             <li class="menu-item">
                                 <a href="contact.html">contact</a>
+                            </li>
+                            <li class="menu-item">
+                                <a href="contact.html">Enquiry</a>
                             </li>
                             <li class="menu-item">
                                 <a href="signinup.html">Sign In</a>
@@ -314,22 +272,7 @@
                 <div class="wrap wrap--w1790">
                     <div class="container-fluid">
                         <div class="row gutter-lg">
-                            <div class="col-md-6 col-lg-3" data-aos="fade-up">
-                                <article class="media media-project media-project-1">
-                                    <figure class="media__img">
-                                        <img src="images/cafe/cafe 2.jpg" alt="luxury villa" style="height: 400px;"/>
-                                    </figure>
-                                    <div class="bg-overlay"></div>
-                                    <span class="line"></span>
-                                    <span class="line line--bottom"></span>
-                                    <div class="media__body">
-                                        <h3 class="title">
-                                            <a href="cafe.html">Cafe</a>
-                                        </h3>
-                                        <div class="address">Perth, Australia</div>
-                                    </div>
-                                </article>
-                            </div>
+                            <!--  -->
                             <div class="col-md-6 col-lg-3" data-aos="fade-up">
                                 <article class="media media-project media-project-1">
                                     <figure class="media__img">
@@ -349,14 +292,14 @@
                             <div class="col-md-6 col-lg-3" data-aos="fade-up">
                                 <article class="media media-project media-project-1">
                                     <figure class="media__img">
-                                        <img src="images/Office/Office_1 (4).jpg" alt="Skyline" style="height: 400px;" />
+                                        <img src="images/Office/Office_1 (4)_2.jpg" alt="Skyline" style="height: 400px;" />
                                     </figure>
                                     <div class="bg-overlay"></div>
                                     <span class="line"></span>
                                     <span class="line line--bottom"></span>
                                     <div class="media__body">
                                         <h3 class="title">
-                                            <a href="project-detail-office.html">Office</a>
+                                            <a href="project-detail-office.html">Sukshanti Office</a>
                                         </h3>
                                         <div class="address">Michigan, USA</div>
                                     </div>
@@ -397,14 +340,14 @@
                             <div class="col-md-6 col-lg-3" data-aos="fade-up">
                                 <article class="media media-project media-project-1">
                                     <figure class="media__img">
-                                        <img src="images/cafe/meet 3.jpg" alt="wooden villa" style="height: 400px;"  />
+                                        <img src="images/GSK Project/entr.jpg" alt="wooden villa" style="height: 400px;"  />
                                     </figure>
                                     <div class="bg-overlay"></div>
                                     <span class="line"></span>
                                     <span class="line line--bottom"></span>
                                     <div class="media__body">
                                         <h3 class="title">
-                                            <a href="project-detail-meet.html">Meeting Room</a>
+                                            <a href="project-detail-gsk.html">GSK </a>
                                         </h3>
                                         <div class="address">New York, USA</div>
                                     </div>
@@ -472,8 +415,8 @@
                                     <li>Phone number : +91 7220000880</li>
                                     <li>
                                       Email :
-                                      <a href="Project@furnishme.in" class="__cf_email__"
-                                        >Project@furnishme.in</a
+                                      <a href="Projects@furnishme.in" class="__cf_email__"
+                                        >Projects@furnishme.in</a
                                       >
                                     </li>
                                   </ul>
