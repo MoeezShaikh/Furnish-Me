@@ -905,7 +905,8 @@ a:hover {
 .media-about .number {
     color: #fff;
     display: block;
-    text-align: center
+    text-align: center;
+    margin-top: 500px;
 }
 
 @media (max-width:1760px) {
