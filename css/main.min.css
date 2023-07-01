@@ -499,7 +499,11 @@ html {
         max-width: 1200px
     }
 }
-
+@media (min-width:1200px) {
+    #container {
+        max-width: 1800px
+    }
+}
 .ic-fb:hover {
     color: #3b5998
 }
@@ -7304,9 +7308,9 @@ button {
     background-repeat: no-repeat
 }
 
-.bg-pattern-1 {
+/* .bg-pattern-1 {
     background: url(../images/icon/bg-pattern-02.jpg) center center/cover no-repeat
-}
+} */
 
 .bg-pattern-2 {
     background: url(../images/icon/bg-pattern-03.jpg) center center/cover no-repeat
