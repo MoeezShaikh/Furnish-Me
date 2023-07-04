@@ -41,8 +41,8 @@
                         $('#pp-nav').removeClass('light dark').addClass(color);
                         pageTitle.text(title);
                         header.removeClass('light dark').addClass(color);
-                        if (color === 'light') header.find('.logo img').attr('src', 'images/icon/logo-black.png');
-                        else header.find('.logo img').attr('src', 'images/icon/logo-white.png');
+                        if (color === 'light') header.find('.logo img').attr('src', 'images/icon/lOGO.png');
+                        else header.find('.logo img').attr('src', 'images/icon/lOGO.png');
                         if (nextIndex == 4)
                             jsLine.addClass('active');
                     }
