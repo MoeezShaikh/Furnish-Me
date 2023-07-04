@@ -501,7 +501,8 @@ html {
 }
 @media (min-width:1200px) {
     #container {
-        max-width: 1800px
+        padding: 0%;
+        max-width: 100%
     }
 }
 .ic-fb:hover {
