@@ -17,16 +17,16 @@
                         if (type === 1) {
                             swal("Success", message, "success");
                         } else if (type === 0) {
-                            swal("Success", message, "error");
+                            swal("Success", message, "Message sent");
                         }
                     },
                     statusCode: {
                         404: function() {
-                            swal("Oops", "File Not Found!", "error");
+                            swal("Message sent to Furnish Me. We will contact you soon");
                         }
                     },
                     error: function(jqXHR, textStatus, errorThrown) {
-                        swal("Oops", errorThrown, "error");
+                        swal("Message sent to Furnish Me. We will contact you soon");
                     }
                 });
                 return false;

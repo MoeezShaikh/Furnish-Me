@@ -292,19 +292,19 @@
               </div>
             </div>
             <div class="col-lg-8">
-              <form class="form-contact js-contact-form" method="POST" action="#">
+              <form class="form-contact js-contact-form" method="POST" name="google-sheet" >
                 <div class="form-row no-gutters">
                   <div class="col-md-6">
-                    <input class="au-input" type="text" name="name" placeholder="Name" required="required" />
-                    <input class="au-input" type="email" name="email" placeholder="Email Address" required="required"
+                    <input class="au-input" type="text" name="Name" placeholder="Name" required="required" />
+                    <input class="au-input" type="email" name="Email" placeholder="Email Address" required="required"
                       pattern="[^@]+@[^@]+.[a-zA-Z]{2,6}" />
-                    <input class="au-input" type="text" name="phone" placeholder="Phone" required="required" />
-                    <textarea class="au-input" name="message" placeholder="Message" required="required"></textarea>
+                    <input class="au-input" type="text" name="Phone" placeholder="Phone" required="required" />
+                    <textarea class="au-input" name="Message" placeholder="Message" required="required"></textarea>
 
                     <div class="text-left">
-                      <button class="au-btn au-btn--solid" type="submit">
+                      <input class="au-btn au-btn--solid" type="submit" name="submit">
                         Send message
-                      </button>
+                    </input>
                     </div>
                   </div>
                   <div class="col-md-6 p-r-0">
@@ -457,6 +457,18 @@
   </script>
 
   <script src="js/global.js"></script>
+
+  <script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbzmWeizGzi096II3oIw-X9AINB22nhhff62bf1z5iCjSDe4RIqvxR0mVcKUHjicpTEn/exec'
+    const form = document.forms['google-sheet']
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => alert("Thanks for Contacting us..! We Will Contact You Soon..."))
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
 </body>
 
 </html>
